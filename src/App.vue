@@ -16,8 +16,8 @@ export default {
   },
 
   methods: {
-    fetchData() {
-      axios.get('http://127.0.0.1:8000/api/projects').then((response) => {
+    fetchData(url) {
+      axios.get(url ?? 'http://127.0.0.1:8000/api/projects').then((response) => {
         this.projects = response.data.results.data;
 
 
@@ -49,6 +49,8 @@ export default {
           <ProjectCard :project="project" />
         </div>
       </div>
+      <a v-for="pageLink in pagination.links" class="btn btn-link" :href="fetchData(pageLink.url)"
+        v-html="pageLink.label"></a>
     </div>
   </main>
 </template>
