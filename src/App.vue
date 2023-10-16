@@ -49,7 +49,7 @@ export default {
           <ProjectCard :project="project" />
         </div>
       </div>
-      <a v-for="pageLink in pagination.links" class="btn btn-link" :href="fetchData(pageLink.url)"
+      <a v-for="pageLink in pagination.links" class="btn btn-link" @click="fetchData(pageLink.url)"
         v-html="pageLink.label"></a>
     </div>
   </main>
