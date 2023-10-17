@@ -5,7 +5,7 @@ import axios from "axios";
 export default {
     data() {
         return {
-            project: {},
+            project: [],
         };
     },
     methods: {
@@ -30,7 +30,7 @@ export default {
 
 <template>
     <div class="container">
-        <img :src="getImageUrl(project)" class="card-img-top" alt="..." />
+        <img v-if="project.image" :src="getImageUrl(project)" class="card-img-top" alt="image not found">
 
         <h1>{{ project.title }}</h1>
 
@@ -44,7 +44,9 @@ export default {
                 :style="{ backgroundColor: technology.color, borderRadius: '10px', padding: '5px', marginRight: '5px' }">{{
                     technology.name }}</span>
         </div>
-        <p>{{ project.type.name }}</p>
+        <h5 v-if="project.type">
+            {{ project.type.name }}
+        </h5>
 
 
     </div>
