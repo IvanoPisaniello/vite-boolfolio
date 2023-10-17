@@ -23,7 +23,7 @@ export default {
 
 
 <template>
-    <div class="project-card card mb-3">
+    <div class="my-card project-card card mb-3">
         <img :src="getImageUrl(project)" class="card-img-top" alt="Project Image">
         <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5>
@@ -43,5 +43,9 @@ export default {
   
 
   
-<style scoped></style>
+<style scoped>
+.my-card {
+    background-color: rgba(255, 255, 255, 0.074);
+}
+</style>
   

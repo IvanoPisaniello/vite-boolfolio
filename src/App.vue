@@ -44,18 +44,28 @@ export default {
 </script>
 
 <template>
-  <header>
-    <TheHeader :project="project" />
-  </header>
-  <main>
-    <div class="container p-5">
-      <div class="row">
-        <div v-for="project in projects" :key="project.id" class="col-md-4">
-          <ProjectCard :project="project" />
+  <body>
+
+
+    <header>
+      <TheHeader :project="project" />
+    </header>
+    <main>
+      <div class="container p-5">
+        <div class="row">
+          <div v-for="project in projects" :key="project.id" class="col-md-4">
+            <ProjectCard :project="project" />
+          </div>
         </div>
+        <a v-for="pageLink in pagination.links" class="btn btn-link" @click="fetchData(pageLink.url)"
+          v-html="pageLink.label"></a>
       </div>
-      <a v-for="pageLink in pagination.links" class="btn btn-link" @click="fetchData(pageLink.url)"
-        v-html="pageLink.label"></a>
-    </div>
-  </main>
+    </main>
+  </body>
 </template>
+
+<style scoped lang="scss">
+body {
+  background: linear-gradient(to right, blue, red);
+}
+</style>
