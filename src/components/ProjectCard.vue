@@ -46,6 +46,7 @@ export default {
 <style scoped>
 .my-card {
     background-color: rgba(255, 255, 255, 0.074);
+    height: 100%
 }
 </style>
   
