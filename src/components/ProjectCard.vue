@@ -37,6 +37,8 @@ export default {
 
             </div>
             <p>{{ project.type.name }}</p>
+
+            <router-link :to="{ name: 'projects.show', params: { slug: project.slug } }">Mostra Dettagli</router-link>
         </div>
     </div>
 </template>
