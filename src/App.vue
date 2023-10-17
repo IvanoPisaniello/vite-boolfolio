@@ -45,7 +45,7 @@ export default {
 
 <template>
   <header>
-    <TheHeader :project="projects" />
+    <TheHeader :project="project" />
   </header>
   <main>
     <div class="container p-5">

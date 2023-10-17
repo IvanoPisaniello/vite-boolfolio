@@ -37,10 +37,10 @@ export default {
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="'http://127.0.0.1:8000/home'">Home</a>
+                        <a class="nav-link text-white" href="http://127.0.0.1:8000/home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="'http://127.0.0.1:8000/login'">Progetti</a>
+                        <a class="nav-link text-white" href="http://127.0.0.1:8000/login">Progetti</a>
                     </li>
                 </ul>
 
@@ -49,11 +49,11 @@ export default {
                     <!-- Authentication Links -->
 
                     <li class="nav-item">
-                        <a class="nav-link" href="'http://127.0.0.1:8000/login'">Login</a>
+                        <a class="nav-link" href="http://127.0.0.1:8000/login">Login</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="'http://127.0.0.1:8000/register'">Register</a>
+                        <a class="nav-link" href="http://127.0.0.1:8000/register">Register</a>
                     </li>
 
                     <li class="nav-item dropdown">
