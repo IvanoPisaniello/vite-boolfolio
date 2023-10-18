@@ -6,7 +6,6 @@ export default {
                 name: "",
                 email: "",
                 message: "",
-                attachment: "",
             },
             errors: null,
             success: null,
