@@ -27,7 +27,7 @@ export default {
                 </div>
             </div>
             <div class="right-column">
-                <!-- Qui puoi inserire l'immagine -->
+
             </div>
         </div>
     </div>
@@ -36,7 +36,7 @@ export default {
 <style scoped lang="scss">
 .homepage {
     text-align: left;
-    /* Allineamento a sinistra */
+
     padding: 20px;
 }
 
@@ -48,7 +48,7 @@ export default {
 
 .left-column {
     width: 60%;
-    /* Larghezza della colonna sinistra */
+
 }
 
 .name {
@@ -98,10 +98,9 @@ export default {
 
 .right-column {
     width: 40%;
-    /* Larghezza della colonna destra */
+
     background-color: #333;
-    /* Sfondo grigio per il div vuoto */
-    /* Puoi personalizzare ulteriormente il div vuoto a destra */
+
 }
 
 .contact a {
@@ -113,5 +112,6 @@ export default {
 
 .contact a:hover {
     color: #0056b3;
-}</style>
+}
+</style>
   
