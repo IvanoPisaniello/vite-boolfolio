@@ -7,8 +7,8 @@ export default {
     <div class="homepage">
         <div class="content">
             <div class="left-column">
-                <h1 class="name">Ivano Pisaniello</h1>
-                <p class="tagline">FullStack Web Developer</p>
+                <h1 class="name text-shadow">Ivano Pisaniello</h1>
+                <p class="tagline text-shadow">FullStack Web Developer</p>
 
                 <div class="about">
                     <h2>Chi Sono</h2>
@@ -27,16 +27,20 @@ export default {
                 </div>
             </div>
             <div class="right-column">
+                <img src="../../public/duck.png" alt="Immagine" />
 
             </div>
         </div>
     </div>
 </template>
-  
+
 <style scoped lang="scss">
+img {
+    filter: brightness(0) invert(1);
+}
+
 .homepage {
     text-align: left;
-
     padding: 20px;
 }
 
@@ -48,7 +52,6 @@ export default {
 
 .left-column {
     width: 60%;
-
 }
 
 .name {
@@ -99,8 +102,6 @@ export default {
 .right-column {
     width: 40%;
 
-    background-color: #333;
-
 }
 
 .contact a {
@@ -113,5 +114,8 @@ export default {
 .contact a:hover {
     color: #0056b3;
 }
+
+.text-shadow {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.523);
+}
 </style>
-  
