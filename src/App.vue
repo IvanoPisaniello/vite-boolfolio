@@ -68,7 +68,7 @@ export default {
 
 <style scoped lang="scss">
 body {
-  background: linear-gradient(to right, blue, red);
+  background-color: white;
   height: 900px;
 }
 </style>
