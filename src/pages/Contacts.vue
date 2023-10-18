@@ -60,6 +60,8 @@ export default {
         <div class="alert alert-success" v-else>
             Grazie per avermi contattato, ti risponderò il prima possibile!
         </div>
+
+        <router-link v-if="success" class="custom-btn" :to="{ name: 'home' }">Torna Indietro</router-link>
     </div>
 </template>
   
