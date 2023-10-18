@@ -68,7 +68,8 @@ export default {
 
 <style scoped lang="scss">
 body {
-  background-color: white;
+  background-color: #57838C;
   height: 900px;
+  color: white;
 }
 </style>

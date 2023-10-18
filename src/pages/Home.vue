@@ -9,17 +9,21 @@ export default {
 <template>
     <div class="homepage">
         <div class="header">
-            <h1>Benvenuto nel mio portfolio</h1>
-            <p>Ciao, sono Ivano Pisaniello, e questa è la home page del mio portfolio personale.</p>
+            <h1 class="name">Ivano Pisaniello</h1>
+            <p class="tagline">FullStuck Web Developer</p>
         </div>
         <div class="about">
             <h2>Chi Sono</h2>
-            <p>Sono uno sviluppatore web appassionato di creare progetti creativi e innovativi. Nel mio portfolio troverai
-                una varietà di lavori che ho realizzato con impegno e dedizione.</p>
+            <p>
+                Benvenuto nel mio portfolio! Sono un appassionato sviluppatore web creativo e innovativo. Nel mio portfolio
+                troverai una vasta gamma di progetti che riflettono la mia dedizione e la mia passione.
+            </p>
         </div>
         <div class="contact">
             <h2>Contattami</h2>
-            <p>Se desideri collaborare o avere ulteriori informazioni sui miei progetti, non esitare a contattarmi.</p>
+            <p>
+                Se desideri collaborare o avere ulteriori informazioni sui miei progetti, non esitare a contattarmi.
+            </p>
             <router-link class="nav-link" :to="{ name: 'contacts' }">Contattami</router-link>
         </div>
     </div>
@@ -31,16 +35,17 @@ export default {
     padding: 20px;
 }
 
-.header {
-    margin-bottom: 30px;
+.name {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #007BFF;
 }
 
-.header h1 {
-    font-size: 36px;
-}
-
-.header p {
-    font-size: 18px;
+.tagline {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
 }
 
 .about {
@@ -49,10 +54,12 @@ export default {
 
 .about h2 {
     font-size: 24px;
+    font-weight: bold;
 }
 
 .about p {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.4;
 }
 
 .contact {
@@ -61,15 +68,23 @@ export default {
 
 .contact h2 {
     font-size: 24px;
+    font-weight: bold;
 }
 
 .contact p {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.4;
 }
 
 .contact a {
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none;
-    color: #007BFF
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #0056b3;
 }
 </style>
+  

@@ -23,7 +23,7 @@ export default {
     <nav class="navbar navbar-expand-md shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="">
-                <div class="logo_github">
+                <div class="logo_github text-white">
                     <i class="fab fa-github" style="font-size: 40px;"></i>
                 </div>
             </a>
@@ -37,10 +37,10 @@ export default {
 
                 <ul class="navbar-nav me-auto gap-3">
                     <li class="nav-item">
-                        <router-link class="nav-link" :to="{ name: 'home' }">Home</router-link>
+                        <router-link class="nav-link text-white" :to="{ name: 'home' }">Home</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" :to="{ name: 'progetti' }">Progetti</router-link>
+                        <router-link class="nav-link text-white" :to="{ name: 'progetti' }">Progetti</router-link>
                     </li>
                 </ul>
 
@@ -49,7 +49,7 @@ export default {
 
 
                     <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:8000/login" target="_blank">Area Riservata</a>
+                        <a class="nav-link text-white" href="http://127.0.0.1:8000/login" target="_blank">Area Riservata</a>
                     </li>
 
 
@@ -57,12 +57,6 @@ export default {
                         <a class="nav-link" href="http://127.0.0.1:8000/register">Register</a>
                     </li> -->
 
-                    <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            Nome Utente
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
