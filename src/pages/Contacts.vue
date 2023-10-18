@@ -18,10 +18,10 @@ export default {
 
 <template>
     <div class="container">
-        <h1>Ecco come contattarci!</h1>
+        <h1>Inviami una Mail!</h1>
 
         <div class="alert alert-danger" v-if="errors">
-            Sembra che qualcosa sia andato storto: {{ errors }}
+            Qualcosa è andato storto {{ errors }}
         </div>
 
         <form @submit.prevent="onFormSubmit" v-if="!success">
