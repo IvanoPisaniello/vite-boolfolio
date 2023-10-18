@@ -1,4 +1,6 @@
 <script>
+import axios from 'axios';
+
 export default {
     data() {
         return {
@@ -9,8 +11,21 @@ export default {
             },
             errors: null,
             success: null,
-            loading: false,
+
         };
+    },
+    methods: {
+        onFormSubmit() {
+            axios.post("http://localhost:8000/api/contacts", this.formData)
+                .then(resp => {
+                    this.success = true;
+                    this.errors = null;
+                })
+                .catch(e => {
+                    this.errors = e.message?.data?.message ?? e.message;
+
+                })
+        },
     },
 };
 </script>
@@ -20,7 +35,7 @@ export default {
         <h1>Inviami una Mail!</h1>
 
         <div class="alert alert-danger" v-if="errors">
-            Qualcosa è andato storto {{ errors }}
+            Qualcosa è andato storto! {{ errors }}
         </div>
 
         <form @submit.prevent="onFormSubmit" v-if="!success">
@@ -43,7 +58,7 @@ export default {
         </form>
 
         <div class="alert alert-success" v-else>
-            {{ this.success }}
+            Grazie per avermi contattato, ti risponderò il prima possibile!
         </div>
     </div>
 </template>
