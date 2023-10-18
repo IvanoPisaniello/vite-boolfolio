@@ -20,7 +20,7 @@ export default {
         <div class="contact">
             <h2>Contattami</h2>
             <p>Se desideri collaborare o avere ulteriori informazioni sui miei progetti, non esitare a contattarmi.</p>
-            <a href="/contatti">Contattami</a>
+            <router-link class="nav-link" :to="{ name: 'contacts' }">Contattami</router-link>
         </div>
     </div>
 </template>

@@ -1,0 +1,76 @@
+<script>
+export default {
+    data() {
+        return {
+            formData: {
+                name: "",
+                email: "",
+                message: "",
+                attachment: "",
+            },
+            errors: null,
+            success: null,
+            loading: false,
+        };
+    },
+};
+</script>
+
+<template>
+    <div class="container">
+        <h1>Ecco come contattarci!</h1>
+
+        <div class="alert alert-danger" v-if="errors">
+            Sembra che qualcosa sia andato storto: {{ errors }}
+        </div>
+
+        <form @submit.prevent="onFormSubmit" v-if="!success">
+            <div class="mb-3">
+                <label>Nome</label>
+                <input type="text" class="form-control" v-model="formData.name" />
+            </div>
+
+            <div class="mb-3">
+                <label>Email</label>
+                <input type="text" class="form-control" v-model="formData.email" />
+            </div>
+
+            <div class="mb-3">
+                <label>Messaggio</label>
+                <textarea class="form-control" v-model="formData.message"></textarea>
+            </div>
+
+            <button type="submit" class="custom-btn">Invia</button>
+        </form>
+
+        <div class="alert alert-success" v-else>
+            {{ this.success }}
+        </div>
+    </div>
+</template>
+  
+
+
+  
+
+  
+<style scoped>
+.custom-btn {
+    color: #070606;
+
+    background-color: #f3f3f3;
+
+    border: 1px solid #ccc;
+
+    padding: 5px 10px;
+
+    margin: 5px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+</style>
+  
