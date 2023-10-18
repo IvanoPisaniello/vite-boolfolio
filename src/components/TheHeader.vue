@@ -49,8 +49,9 @@ export default {
 
 
                     <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:8000/login">Area Riservata</a>
+                        <a class="nav-link" href="http://127.0.0.1:8000/login" target="_blank">Area Riservata</a>
                     </li>
+
 
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="http://127.0.0.1:8000/register">Register</a>
