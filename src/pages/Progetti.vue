@@ -44,15 +44,42 @@ export default {
 </script>
 
 <template>
-    <h1>I Miei Progetti</h1>
+    <div class="project-page">
+        <h1>I Miei Progetti</h1>
 
-    <div class="container p-5">
-        <div class="row">
-            <div v-for="project in projects" :key="project.id" class="col-md-4">
-                <ProjectCard :project="project" />
+        <div class="container p-5">
+            <div class="row">
+                <div v-for="project in projects" :key="project.id" class="col-md-4 mb-5">
+                    <ProjectCard :project="project" />
+                </div>
             </div>
+            <a v-for="pageLink in pagination.links" class="custom-button" @click="fetchData(pageLink.url)"
+                v-html="pageLink.label"></a>
         </div>
-        <a v-for="pageLink in pagination.links" class="btn btn-link" @click="fetchData(pageLink.url)"
-            v-html="pageLink.label"></a>
     </div>
 </template>
+  
+<style scoped>
+.project-page {
+    text-align: center;
+}
+
+.custom-button {
+    color: #070606;
+
+    background-color: #f3f3f3;
+
+    border: 1px solid #ccc;
+
+    padding: 5px 10px;
+
+    margin: 5px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+</style>
+  
