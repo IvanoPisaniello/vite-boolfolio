@@ -37,10 +37,10 @@ export default {
 
                 <ul class="navbar-nav me-auto gap-3">
                     <li class="nav-item">
-                        <router-link :to="{ name: 'home' }">Home</router-link>
+                        <router-link class="nav-link" :to="{ name: 'home' }">Home</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link :to="{ name: 'progetti' }">Progetti</router-link>
+                        <router-link class="nav-link" :to="{ name: 'progetti' }">Progetti</router-link>
                     </li>
                 </ul>
 
