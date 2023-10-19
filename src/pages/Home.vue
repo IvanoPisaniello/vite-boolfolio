@@ -5,7 +5,7 @@ export default {
 
 <template>
     <div class="homepage">
-        <div class="content">
+        <div class="content container">
             <div class="left-column">
                 <h1 class="name text-shadow">Ivano Pisaniello</h1>
                 <p class="tagline text-shadow">FullStack Web Developer</p>
