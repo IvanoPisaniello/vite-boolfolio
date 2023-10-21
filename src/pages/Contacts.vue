@@ -32,7 +32,7 @@ export default {
 
 <template>
     <div class="container">
-        <h1>Inviami una Mail!</h1>
+        <h1>Contattami inviando una mail!</h1>
 
         <div class="alert alert-danger" v-if="errors">
             Qualcosa è andato storto! {{ errors }}
